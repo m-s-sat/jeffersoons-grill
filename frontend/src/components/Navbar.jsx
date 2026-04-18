@@ -48,13 +48,13 @@ export const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 h-16 sm:h-20 flex items-center justify-between">
-        <button data-testid="brand-logo" onClick={() => go("home")} className="flex items-center gap-2.5 text-[#F4EAE1]">
-          <Flame className="w-5 h-5 text-[#D84B20]" strokeWidth={2.2} />
-          <span className="font-display text-xl sm:text-2xl tracking-tight">Jefferson's Grill</span>
+        <button data-testid="brand-logo" onClick={() => go("home")} className="flex items-center gap-2.5 text-[#F4EAE1] flex-shrink-0">
+          <Flame className="w-5 h-5 text-[#D84B20] flex-shrink-0" strokeWidth={2.2} />
+          <span className="font-display text-xl sm:text-2xl tracking-tight whitespace-nowrap">Jefferson's Grill</span>
         </button>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-7 lg:gap-8">
+        <div className="hidden lg:flex items-center gap-7 xl:gap-8">
           {LINKS.map((l) => (
             <button
               key={l.id}
