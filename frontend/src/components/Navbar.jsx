@@ -89,11 +89,11 @@ export const Navbar = () => {
           <SheetTrigger asChild>
             <button
               data-testid="nav-mobile-toggle"
-              className="md:hidden text-[#F4EAE1] p-2 border border-[#3A2A24] rounded-sm hover:border-[#D84B20]"
+              className="lg:hidden text-[#F4EAE1] p-2.5 border border-[#D84B20]/70 hover:bg-[#D84B20] hover:text-white rounded-sm bg-[#1B1512]/70 backdrop-blur-sm"
               aria-label="Open menu"
-              style={{ transition: "border-color 0.2s ease" }}
+              style={{ transition: "background-color 0.2s ease, color 0.2s ease" }}
             >
-              <Menu className="w-5 h-5" />
+              <Menu className="w-5 h-5" strokeWidth={2.3} />
             </button>
           </SheetTrigger>
           <SheetContent

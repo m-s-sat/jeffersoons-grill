@@ -76,3 +76,33 @@
 }
 
 .scroll-mt-nav { scroll-margin-top: 80px; }
+
+/* Custom scrollbar — smoky amber theme */
+html, body {
+    scrollbar-width: thin;
+    scrollbar-color: #D84B20 #1B1512;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #14110F;
+    border-left: 1px solid #231B18;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #D84B20 0%, #9E2A2B 100%);
+    border-radius: 6px;
+    border: 2px solid #14110F;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #E88D39 0%, #D84B20 100%);
+}
+::-webkit-scrollbar-corner { background: #14110F; }
+
+/* Selection */
+::selection {
+    background: #D84B20;
+    color: #F4EAE1;
+}
