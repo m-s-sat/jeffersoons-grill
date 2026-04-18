@@ -1,0 +1,114 @@
+{
+  "theme": "dark",
+  "archetype": "1 (Organic & Earthy - Charred/Smoky Variant)",
+  "typography": {
+    "headings": "Bebas Neue",
+    "body": "Work Sans",
+    "rules": [
+      "Headings over 32px MUST use tracking-tight or tracking-tighter.",
+      "Overlines/Labels MUST be Uppercase + Tiny + Wide Spacing (tracking-[0.2em]).",
+      "Do NOT use Inter or generic sans for headings.",
+      "H1 size max text-6xl, fluid scaling."
+    ]
+  },
+  "colors": {
+    "background": "#14110F",
+    "surface": "#231B18",
+    "primary": "#D84B20",
+    "secondary": "#E88D39",
+    "accent": "#9E2A2B",
+    "text": {
+      "primary": "#F4EAE1",
+      "secondary": "#B5A69B",
+      "muted": "#7A6A60"
+    },
+    "border": "#3A2A24",
+    "rules": [
+      "Use charred, warm dark backgrounds.",
+      "Primary CTA MUST be the Smoky BBQ Red/Amber (#D84B20).",
+      "Never use pure black or pure white."
+    ]
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "p-4, p-8, p-12, p-20, p-32",
+    "grid_strategy": "MODE A: THE 'TETRIS' GRID for Photo Gallery. Asymmetry, visual tension.",
+    "alignment": "Left-align paragraphs, center-align Hero H1.",
+    "rules": [
+      "Containers with borders must have internal padding (p-6 or p-8).",
+      "Generous Spacing Philosophy: Use 2-3x more spacing than typical designs.",
+      "Grid Layouts MUST only have direct children."
+    ]
+  },
+  "components": {
+    "hero": {
+      "overlay": "bg-black/60",
+      "instruction": "Massive Bebas Neue heading. Parallax scroll effect if possible."
+    },
+    "navigation": {
+      "style": "Glassmorphism (Crystal Variant)",
+      "instruction": "backdrop-blur-xl bg-black/60 with 1px delicate inner stroke border-white/10. Sticky top."
+    },
+    "menu_section": {
+      "style": "Shadcn Tabs",
+      "instruction": "Use Shadcn Tabs for Categories. Do not use generic cards. Go cardless or use sharp-edged flat surfaces."
+    },
+    "forms": {
+      "style": "Neumorphism (Tactile) / Flat Solid",
+      "instruction": "Use customized Shadcn Form, Input, Select. Solid dark background for inputs, thin amber borders on focus."
+    }
+  },
+  "media": {
+    "images": {
+      "hero_background": {
+        "url": "https://images.unsplash.com/photo-1611354609291-69aba96e45df",
+        "description": "Grilled meat on black grill, perfect for dark smoky background"
+      },
+      "gallery_1": {
+        "url": "https://images.unsplash.com/photo-1680925847230-a3e85b84da92",
+        "description": "Grill with food cooking"
+      },
+      "gallery_2": {
+        "url": "https://images.unsplash.com/photo-1694192708491-881b730b8d2b",
+        "description": "Close up of steak on grill"
+      },
+      "gallery_3": {
+        "url": "https://images.unsplash.com/photo-1761314014872-41e958dab41e",
+        "description": "Glazed ribs cooking on grill"
+      },
+      "gallery_4": {
+        "url": "https://images.unsplash.com/photo-1577271141104-b6bd7b76b8e9",
+        "description": "Grilled meat"
+      },
+      "about_interior_1": {
+        "url": "https://images.unsplash.com/photo-1767346427054-d3a371e00f68",
+        "description": "Cozy log cabin restaurant interior warm"
+      },
+      "about_interior_2": {
+        "url": "https://images.unsplash.com/photo-1771554753130-9e63a3f63e4d",
+        "description": "Cozy cafe interior wooden tables"
+      }
+    },
+    "rules": [
+      "Image max-height on mobile: 80vh.",
+      "Hero image must have bg-black/60 overlay to ensure text contrast."
+    ]
+  },
+  "motion_and_interactions": {
+    "scrolling": "Lenis smooth scrolling is MANDATORY for premium feel.",
+    "hover_states": "ALWAYS explicitly set text color on hover. Subtle scale up for gallery images.",
+    "transitions": "Use specific properties (transition: transform 0.2s ease, opacity 0.2s ease). No 'all'."
+  },
+  "testing": {
+    "attributes": "All interactive elements MUST include data-testid attributes (kebab-case, role-based)."
+  },
+  "instructions_to_main_agent": [
+    "Build a single-page app with smooth scroll using React + Tailwind + Shadcn.",
+    "Implement the 'Home', 'Menu', 'Reviews', 'About', 'Contact' sections.",
+    "Include both a contact form and a reservation form.",
+    "Use real reviews: Michael Mclaurin, The High Church THC, Demetria Green.",
+    "Menu must include: Ribs, Brisket, Pulled Pork, Chicken, Sandwiches, Sides, Desserts, Drinks (use demo data for items).",
+    "Vibe: Rustic/smoky BBQ vibe (warm woods, charred textures, amber/red).",
+    "Install and use 'lucide-react' for icons.",
+    "Do NOT use HTML <select> or <input type='date'>. Use Shadcn Dropdown/Select and Calendar/Datepicker."
+  ]
+}
